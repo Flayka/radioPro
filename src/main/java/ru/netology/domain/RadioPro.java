@@ -2,12 +2,17 @@ package ru.netology.domain;
 
 public class RadioPro {
     private int currentStation;
-    private int maxNumberStation = 9;
+    private int maxNumberStation = 10;
     private int minNumberStation = 0;
     private int currentVolume;
-    private int maxVolume = 10;
+    private int maxVolume = 100;
     private int minVolume = 0;
     private boolean on;
+
+    public RadioPro(int currentStation, int currentVolume) {
+        this.currentStation = currentStation;
+        this.currentVolume = currentVolume;
+    }
 
     public int getCurrentStation() {
         return currentStation;
@@ -40,7 +45,6 @@ public class RadioPro {
         }
         this.currentVolume = currentVolume;
     }
-
 
     public void makeNumberStationHigher() {
         if (currentStation == maxNumberStation) {
