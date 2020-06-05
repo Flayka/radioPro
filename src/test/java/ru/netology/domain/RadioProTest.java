@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class RadioProTest {
-    RadioPro radio = new RadioPro(5, 10, 0, 50, 100, 0, true);
+    RadioPro radio = new RadioPro(5, 10, 0, 50, 100, 0);
 
     @Test
     void shouldMakeNumberStationHigher() {
@@ -95,5 +95,4 @@ class RadioProTest {
         radio.makeNumberStationLower();
         assertEquals(14, radio.getCurrentStation());
     }
-
 }

@@ -7,16 +7,13 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-
 public class RadioPro {
     private int currentStation;
-    private int maxNumberStation;
+    private int maxNumberStation = 10;
     private int minNumberStation = 0;
     private int currentVolume;
     private int maxVolume = 100;
     private int minVolume = 0;
-    private boolean on;
-
 
     public void setCurrentStation(int currentStation) {
         if (currentStation > maxNumberStation) {
