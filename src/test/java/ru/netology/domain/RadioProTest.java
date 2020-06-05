@@ -95,5 +95,4 @@ class RadioProTest {
         radio.makeNumberStationLower();
         assertEquals(14, radio.getCurrentStation());
     }
-
 }
